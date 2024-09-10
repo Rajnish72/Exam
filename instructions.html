@@ -9,42 +9,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="stylesheets/style2.css">
 </head>
 
-<body class="w-full h-screen flex flex-col justify-center items-center workSans">
-    <header class="w-full bg-gray-800 text-white p-4">
+<body class="w-full flex flex-col justify-center items-center ">
+    <header class="w-full bg-gray-800 text-white py-4 mb-4">
         <h1 class="text-center text-4xl">Exam Instructions</h1>
     </header>
 
-    <main class="flex-grow flex justify-center items-center mt-4">
-        <div
-            class="instructions w-[90%] h-[90%] flex flex-col justify-center items-center bg-white shadow-lg rounded-3xl p-8">
+    <main class="flex-grow flex justify-center items-center w-[85%]">
+        <div class="instructions w-full flex flex-col justify-center items-start bg-white shadow-lg rounded-3xl p-6">
+            <h2 class="text-2xl font-bold my-2 text-center">Please Read the Following Instructions Carefully</h2>
 
-            <h2 class="text-2xl font-bold mt-5 ">Please Read the Following Instructions Carefully</h2>
-
-            <div class=" list-decimal mt-3 ">
-                <li>This paper contain three section Mathematics,Science,<br>General Knowledge</li>
-                <li>This paper contain 20 Question.Each question consist 4-mark.</li>
-                <li>The total duration of exam is 1 hrs</li>
-                <li>If you not mark the option , it considered as you not attemp the question.</li>
-                <li>The mark question is
-                <li class="mx-4 list-disc">correct , you awarded 4 marks.</li>
-                <li class="mx-4 list-disc">Wrong , you awarded -1 marks. </li>
+            <div class="list-decimal mt-3 flex justify-start items-start flex-col">
+                <li>Reporting Time: Candidates must report to the exam center at least 30 minutes before the scheduled
+                    start of the examination.
+                </li>
+                <li>Identity Verification: Carry your admit card, a valid photo ID proof, and any other required
+                    documents for verification purposes.
+                    .</li>
+                <li>The total duration of exam is 1 hour.</li>
+                <li>Prohibited Items: The following items are strictly prohibited inside the examination hall: </li>
+                    <p> - Mobile phones, smartwatches, calculators, pagers, or any other electronic devices.
+                    </p>
+                    <p> - Stationery items such as books, written notes, pens, and paper (except as permitted by the
+                    authorities).
+                    </p>
+                     <p>- Wallets, bags, sunglasses, belts, and caps.</p>
+                <li>Permissible Items: Candidates are allowed to carry only a transparent ballpoint pen, their admit
+                    card, and photo ID.
+                </li>
+                <li>Exam Timings: The examination will be held from 9:00 AM to 12:00 PM (for morning shift) or 2:00 PM
+                    to 5:00 PM (for afternoon shift). No candidate will be allowed entry after the exam starts.
+                </li>
+                <li>Seating Arrangement: Candidates must sit in their allocated seats according to the seating plan
+                    displayed at the center.
+                </li>
+                <li>Leaving the Exam Hall: Candidates are not permitted to leave the examination hall before the test
+                    concludes.
                 </li>
             </div>
 
             <div class="my-8">
                 <input type="checkbox" id="tick" name="tick" value="conditions">
                 <label for="tick">
-                    Read all instructions carefully
+                    I hereby declare that I have carefully read and understood all the instructions provided for the
+                    examination. I agree to abide by the rules and regulations set forth by the examination authorities.
+                    I confirm that I am ready to begin the exam with complete honesty and integrity, and I will not
+                    engage in any form of malpractice or unfair means during the course of the examination.
                 </label><br>
             </div>
 
-
             <div class="cursor-pointer w-40 loginBtn text-white mb-4 p-[10px] flex 
             justify-center rounded-full font-bold 
-            transition ease-in-out delay-1 bg-blue-500 hover:-translate-y-1 
+            transition ease-in-out delay-1 hover:-translate-y-1 
             hover:scale-110 hover:bg-indigo-500 duration-3 bg-sky-600">
                 <button>Get Start</button>
             </div>
@@ -52,7 +70,7 @@
     </main>
 
 
-    <footer class="w-full bg-gray-800 text-white p-4 mt-4">
+    <footer class="w-full bg-gray-800 text-white p-2">
         <p class="text-center">© 2024 Online Examination </p>
     </footer>
 </body>
